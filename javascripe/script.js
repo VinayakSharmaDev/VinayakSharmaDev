@@ -4,16 +4,17 @@ const projectContent = document.querySelector(".project--content");
 
 
 const projectContentData = [
-    {image: "assets/img/Minimal Music Player.png", title: "Spotify - Home Page", Discription: "A minimal Spotify-inspired music player built using HTML, CSS, and JavaScript.", mode: "🟢 Online", demo: "https://vinayaksharma-minimal-music-player.netlify.app/", github: "https://github.com/VinayakSharmaDev/minimal-music-player"},
-    {image: "assets/img/Portfolio.png", title: "First Portfolio", Discription: "My First ever portfolio", mode: "🟢 Online", demo: "https://vinayaksharmadev.netlify.app/", github: "https://github.com/VinayakSharmaDev/Portfolio"},
-    {image: "assets/img/Microsoft-To-Do.png", title: "Microsoft-To-Do", Discription: "Microsoft inspired To-Do with basic feature", mode: "🟢 Online", demo: "https://vinayaksharmadev.github.io/Microsoft-To-Do/", github: "https://github.com/VinayakSharmaDev/Microsoft-To-Do/git log --oneline --graph --all --decorate -20"},
+  { image: "assets/img/Microsoft-To-Do.png", title: "Microsoft-To-Do", Discription: "Microsoft inspired To-Do with basic feature", mode: "🟢 Online", demo: "https://vinayaksharmadev.github.io/Microsoft-To-Do/", github: "https://github.com/VinayakSharmaDev/Microsoft-To-Do/git log --oneline --graph --all --decorate -20" },
+  { image: "assets/img/Minimal Music Player.png", title: "Spotify - Home Page", Discription: "A minimal Spotify-inspired music player built using HTML, CSS, and JavaScript.", mode: "🟢 Online", demo: "https://vinayaksharma-minimal-music-player.netlify.app/", github: "https://github.com/VinayakSharmaDev/minimal-music-player" },
+  { image: "assets/img/Portfolio.png", title: "First Portfolio", Discription: "My First ever portfolio", mode: "🟢 Online", demo: "https://vinayaksharmadev.netlify.app/", github: "https://github.com/VinayakSharmaDev/Portfolio" },
+
 ]
 
-projectContentData.forEach(card =>{
+projectContentData.forEach(card => {
 
-projectContent.insertAdjacentHTML("beforeend", 
+  projectContent.insertAdjacentHTML("beforeend",
 
-        `     <div class="project--card">
+    `     <div class="project--card">
 
                     <div class="project--card__img">
                         <img src="${card.image}" alt="Vinayak Sharma project" width="400" height="300"></a>
@@ -36,7 +37,7 @@ projectContent.insertAdjacentHTML("beforeend",
 
                 </div>`
 
-    )
+  )
 
 
 });
@@ -73,16 +74,16 @@ const hamBtnActive = document.querySelector(".hamberger-active");
 const hamActive = document.querySelector(".hamberger--content");
 
 
-  
-  hamBtn.addEventListener("click", ()=> {
 
-hamActive.classList.add("hamberger--content--active");
+hamBtn.addEventListener("click", () => {
+
+  hamActive.classList.add("hamberger--content--active");
 
 })
 
- hamBtnActive.addEventListener("click", ()=> {
+hamBtnActive.addEventListener("click", () => {
 
-hamActive.classList.remove("hamberger--content--active");
+  hamActive.classList.remove("hamberger--content--active");
 
 })
 
