@@ -336,10 +336,35 @@ main {
     width: 21px;
 }
 
+.frontend li:nth-child(4) img {
+    width: 21px;
+}
+
+.frontend li:nth-child(5) img {
+    width: 21px;
+}
+
 .tools {
 
     padding-top: 13px;
+}
 
+.tools ul {
+    padding-top: 4px;
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.tools li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools img {
+    width: 21px;
 }
 
 #skills {
